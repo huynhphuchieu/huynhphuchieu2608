@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Du Lịch Việt Nam - Khám phá vẻ đẹp quê hương</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>DuLichVN</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="active">Trang chủ</a></li>
+                    <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                    <li><a href="dia-diem.html">Địa điểm nổi bật</a></li>
+                    <li><a href="lien-he.html">Liên hệ</a></li>
+                    <li><a href="dang-ky.html" class="btn-register">Đăng ký</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Khám Phá Việt Nam</h1>
+            <p>Vẻ đẹp bất tận - Hành trình bất tận</p>
+            <a href="dia-diem.html" class="btn-hero">Khám phá ngay</a>
+        </div>
+    </section>
+
+    <!-- Giới thiệu ngắn -->
+    <section class="intro">
+        <div class="container">
+            <div class="section-title">
+                <h2>Chào mừng đến với Du Lịch Việt Nam</h2>
+                <p>Khám phá những điểm đến tuyệt vời nhất của đất nước hình chữ S</p>
+            </div>
+            <div class="intro-grid">
+                <div class="intro-item">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Núi non hùng vĩ</h3>
+                    <p>Khám phá những dãy núi hùng vĩ, những cánh rừng nguyên sinh kỳ vĩ</p>
+                </div>
+                <div class="intro-item">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <h3>Bãi biển tuyệt đẹp</h3>
+                    <p>Những bãi biển xanh, cát trắng, nắng vàng trải dài khắp đất nước</p>
+                </div>
+                <div class="intro-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Ẩm thực đa dạng</h3>
+                    <p>Thưởng thức nền ẩm thực phong phú, đậm đà bản sắc dân tộc</p>
+                </div>
+                <div class="intro-item">
+                    <i class="fas fa-history"></i>
+                    <h3>Di tích lịch sử</h3>
+                    <p>Tìm hiểu văn hóa, lịch sử qua các di tích, đền đài cổ kính</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Địa điểm nổi bật -->
+    <section class="featured-destinations">
+        <div class="container">
+            <div class="section-title">
+                <h2>Địa Điểm Nổi Bật</h2>
+                <p>Những điểm đến được yêu thích nhất tại Việt Nam</p>
+            </div>
+            <div class="destination-grid">
+                <!-- Hạ Long -->
+                <div class="destination-card" data-id="halong">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Vịnh Hạ Long">
+                        <div class="destination-overlay">
+                            <span class="location">Quảng Ninh</span>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Vịnh Hạ Long</h3>
+                        <p>Kỳ quan thiên nhiên thế giới với hàng nghìn hòn đảo đá vôi hùng vĩ</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                            <span><i class="fas fa-calendar"></i> 3-5 ngày</span>
+                        </div>
+                        <button class="btn-detail" onclick="openPopup('halong')">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Phú Quốc -->
+                <div class="destination-card" data-id="phuquoc">
+                    <div class="destination-img">
+                        <img src="img/download.jpg" alt="Phú Quốc">
+                        <div class="destination-overlay">
+                            <span class="location">Kiên Giang</span>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Đảo Phú Quốc</h3>
+                        <p>Hòn đảo ngọc với những bãi biển đẹp nhất Việt Nam</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                            <span><i class="fas fa-calendar"></i> 4-6 ngày</span>
+                        </div>
+                        <button class="btn-detail" onclick="openPopup('phuquoc')">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Đà Lạt -->
+                <div class="destination-card" data-id="dalat">
+                    <div class="destination-img">
+                        <img src="img/dalat.jpg" alt="Đà Lạt">
+                        <div class="destination-overlay">
+                            <span class="location">Lâm Đồng</span>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Đà Lạt</h3>
+                        <p>Thành phố ngàn hoa với khí hậu mát mẻ quanh năm</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                            <span><i class="fas fa-calendar"></i> 2-4 ngày</span>
+                        </div>
+                        <button class="btn-detail" onclick="openPopup('dalat')">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Hội An -->
+                <div class="destination-card" data-id="hoian">
+                    <div class="destination-img">
+                        <img src="img/hoi an.jpg" alt="Hội An">
+                        <div class="destination-overlay">
+                            <span class="location">Quảng Nam</span>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Phố cổ Hội An</h3>
+                        <p>Di sản văn hóa thế giới với những ngôi nhà cổ kính</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                            <span><i class="fas fa-calendar"></i> 2-3 ngày</span>
+                        </div>
+                        <button class="btn-detail" onclick="openPopup('hoian')">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Sapa -->
+                <div class="destination-card" data-id="sapa">
+                    <div class="destination-img">
+                        <img src="img/sapa.jpg" alt="Sapa">
+                        <div class="destination-overlay">
+                            <span class="location">Lào Cai</span>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Sa Pa</h3>
+                        <p>Thị trấn mờ sương với ruộng bậc thang tuyệt đẹp</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                            <span><i class="fas fa-calendar"></i> 3-4 ngày</span>
+                        </div>
+                        <button class="btn-detail" onclick="openPopup('sapa')">Xem chi tiết</button>
+                    </div>
+                </div>
+
+                <!-- Huế -->
+                <div class="destination-card" data-id="hue">
+                    <div class="destination-img">
+                        <img src="img/codohue.jpg" alt="Huế">
+                        <div class="destination-overlay">
+                            <span class="location">Thừa Thiên Huế</span>
+                        </div>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Cố đô Huế</h3>
+                        <p>Kinh đô xưa với những lăng tẩm, đền đài cổ kính</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                            <span><i class="fas fa-calendar"></i> 2-3 ngày</span>
+                        </div>
+                        <button class="btn-detail" onclick="openPopup('hue')">Xem chi tiết</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video giới thiệu -->
+    <section class="video-section">
+        <div class="container">
+            <div class="video-content">
+                <h2>Khám phá Việt Nam qua video</h2>
+                <p>Hành trình qua những cảnh đẹp nhất đất nước</p>
+                <div class="video-placeholder">
+                    <i class="fas fa-play-circle"></i>
+                    <span>Xem video giới thiệu</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tour hot -->
+    <section class="hot-tours">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tour Du Lịch Hot Nhất</h2>
+                <p>Những hành trình được nhiều người lựa chọn</p>
+            </div>
+            <div class="tour-grid">
+                <div class="tour-item">
+                    <div class="tour-img">
+                        <img src="img/hue danang.jpg" alt="Tour Huế">
+                    </div>
+                    <div class="tour-info">
+                        <h4>Tour Huế - Đà Nẵng - Hội An</h4>
+                        <p><i class="fas fa-clock"></i> 5 ngày 4 đêm</p>
+                        <p class="price">5.990.000đ</p>
+                    </div>
+                </div>
+                <div class="tour-item">
+                    <div class="tour-img">
+                        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tour Hạ Long">
+                    </div>
+                    <div class="tour-info">
+                        <h4>Tour Hạ Long - Cát Bà</h4>
+                        <p><i class="fas fa-clock"></i> 3 ngày 2 đêm</p>
+                        <p class="price">3.490.000đ</p>
+                    </div>
+                </div>
+                <div class="tour-item">
+                    <div class="tour-img">
+                        <img src="img/phu quoc nam dao.jpg" alt="Tour Phú Quốc">
+                    </div>
+                    <div class="tour-info">
+                        <h4>Tour Phú Quốc - Nam Đảo</h4>
+                        <p><i class="fas fa-clock"></i> 4 ngày 3 đêm</p>
+                        <p class="price">4.990.000đ</p>
+                    </div>
+                </div>
+                <div class="tour-item">
+                    <div class="tour-img">
+                        <img src="img/da lat hoa.jpg" alt="Tour Đà Lạt">
+                    </div>
+                    <div class="tour-info">
+                        <h4>Tour Đà Lạt - Thành phố ngàn hoa</h4>
+                        <p><i class="fas fa-clock"></i> 3 ngày 2 đêm</p>
+                        <p class="price">2.990.000đ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tin tức du lịch -->
+    <section class="news">
+        <div class="container">
+            <div class="section-title">
+                <h2>Tin Tức Du Lịch</h2>
+                <p>Cập nhật những thông tin mới nhất</p>
+            </div>
+            <div class="news-grid">
+                <article class="news-item">
+                    <img src="img/hue 2.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>Huế đón 1 triệu lượt khách trong tháng 3</h3>
+                        <p class="date"><i class="fas fa-calendar"></i> 15/03/2024</p>
+                        <p>Lượng khách du lịch đến Huế tăng đột biến trong tháng 3...</p>
+                    </div>
+                </article>
+                <article class="news-item">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="News">
+                    <div class="news-content">
+                        <h3>Vịnh Hạ Long trong top 10 điểm đến đẹp nhất</h3>
+                        <p class="date"><i class="fas fa-calendar"></i> 10/03/2024</p>
+                        <p>Vịnh Hạ Long được tạp chí du lịch uy tín bình chọn...</p>
+                    </div>
+                </article>
+                <article class="news-item">
+                    <img src="img/dalat hoa anh dao.jpg" alt="News">
+                    <div class="news-content">
+                        <h3>Đà Lạt vào mùa hoa anh đào</h3>
+                        <p class="date"><i class="fas fa-calendar"></i> 05/03/2024</p>
+                        <p>Những con đường ngập tràn sắc hồng của hoa anh đào...</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Đăng ký nhận tin -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Đăng ký nhận thông tin du lịch</h2>
+                <p>Nhận những ưu đãi và thông tin mới nhất về du lịch</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Nhập email của bạn" required>
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- POPUP CHI TIẾT ĐỊA ĐIỂM -->
+    <div id="destinationPopup" class="popup">
+        <div class="popup-content">
+            <!-- Header popup -->
+            <div class="popup-header">
+                <h2 id="popupTitle">Vịnh Hạ Long</h2>
+                <span class="close-popup" onclick="closePopup()">&times;</span>
+            </div>
+            
+            <!-- Nội dung popup -->
+            <div class="popup-body">
+                <div class="popup-image">
+                    <img id="popupMainImage" src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Địa điểm">
+                    <div class="popup-badge">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span id="popupLocation">Quảng Ninh</span>
+                    </div>
+                    <div class="popup-rating">
+                        <i class="fas fa-star"></i>
+                        <span id="popupRating">4.8</span>
+                    </div>
+                </div>
+
+                <div class="popup-info">
+                    <p id="popupDescription">
+                        Kỳ quan thiên nhiên thế giới với hàng nghìn hòn đảo đá vôi hùng vĩ nhô lên từ mặt nước xanh ngọc bích.
+                    </p>
+
+                    <!-- Thông tin chi tiết dạng grid -->
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <span class="info-label">Thời gian</span>
+                                <span class="info-value" id="popupDuration">3-5 ngày</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-calendar-alt"></i>
+                            <div>
+                                <span class="info-label">Mùa đẹp nhất</span>
+                                <span class="info-value" id="popupSeason">Tháng 4 - Tháng 10</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-utensils"></i>
+                            <div>
+                                <span class="info-label">Đặc sản</span>
+                                <span class="info-value" id="popupFood">Hải sản, chả mực</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <i class="fas fa-dollar-sign"></i>
+                            <div>
+                                <span class="info-label">Chi phí</span>
+                                <span class="info-value" id="popupPrice">2-5 triệu/người</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Hoạt động nổi bật -->
+                    <div class="activities-section">
+                        <h3><i class="fas fa-hiking"></i> Hoạt động nổi bật</h3>
+                        <ul class="activities-list" id="popupActivities">
+                            <li><i class="fas fa-ship"></i> Tham quan vịnh bằng thuyền</li>
+                            <li><i class="fas fa-mountain"></i> Khám phá hang động</li>
+                            <li><i class="fas fa-water"></i> Chèo kayak</li>
+                            <li><i class="fas fa-camera"></i> Check-in sống ảo</li>
+                        </ul>
+                    </div>
+
+                    <!-- Địa điểm tham quan -->
+                    <div class="places-section">
+                        <h3><i class="fas fa-map-signs"></i> Địa điểm tham quan</h3>
+                        <div class="places-grid" id="popupPlaces">
+                            <span>Hang Sửng Sốt</span>
+                            <span>Đảo Titop</span>
+                            <span>Hang Đầu Gỗ</span>
+                            <span>Hồ Ba Hầm</span>
+                        </div>
+                    </div>
+
+                    <!-- Thư viện ảnh -->
+                    <div class="gallery-section">
+                        <h3><i class="fas fa-images"></i> Thư viện ảnh</h3>
+                        <div class="gallery-grid" id="popupGallery">
+                            <img src="img/hue 2.jpg" alt="Gallery 1">
+                            <img src="img/sapa.jpg" alt="Gallery 2">
+                            <img src="img/phu quoc nam dao.jpg" alt="Gallery 3">
+                            <img src="img/hoi an.jpg" alt="Gallery 4">
+                            <img src="img/da lat hoa.jpg" alt="Gallery 5">
+                            <img src="img/codohue.jpg" alt="Gallery 6">
+                        </div>
+                    </div>
+
+                    <!-- Nút hành động -->
+                    <div class="popup-actions">
+                        <button class="btn-book-now">
+                            <i class="fas fa-calendar-check"></i>
+                            Đặt tour ngay
+                        </button>
+                        <button class="btn-add-favorite">
+                            <i class="far fa-heart"></i>
+                            Thêm vào yêu thích
+                        </button>
+                        <button class="btn-share" onclick="shareDestination()">
+                            <i class="fas fa-share-alt"></i>
+                            Chia sẻ
+                        </button>
+                    </div>
+
+                    <!-- Bình luận -->
+                    <div class="comments-section">
+                        <h3><i class="fas fa-comments"></i> Đánh giá từ du khách</h3>
+                        <div class="comment-item">
+                            <div class="comment-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <span class="comment-author">Nguyễn Văn A</span>
+                                    <span class="comment-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </span>
+                                </div>
+                                <p class="comment-text">Trải nghiệm tuyệt vời! Phong cảnh đẹp như tranh vẽ.</p>
+                                <span class="comment-date">15/03/2024</span>
+                            </div>
+                        </div>
+                        <div class="comment-item">
+                            <div class="comment-avatar">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="comment-content">
+                                <div class="comment-header">
+                                    <span class="comment-author">Trần Thị B</span>
+                                    <span class="comment-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </span>
+                                </div>
+                                <p class="comment-text">Dịch vụ tốt, hướng dẫn viên nhiệt tình. Sẽ quay lại!</p>
+                                <span class="comment-date">10/03/2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form bình luận -->
+                    <div class="comment-form">
+                        <h4>Để lại bình luận của bạn</h4>
+                        <textarea placeholder="Chia sẻ trải nghiệm của bạn..."></textarea>
+                        <button class="btn-submit-comment">Gửi bình luận</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>DuLichVN</span>
+                    </div>
+                    <p>Khám phá vẻ đẹp Việt Nam cùng chúng tôi. Hành trình của bạn bắt đầu từ đây.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                        <li><a href="dia-diem.html">Địa điểm</a></li>
+                        <li><a href="lien-he.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Địa điểm nổi bật</h3>
+                    <ul>
+                        <li><a href="#">Vịnh Hạ Long</a></li>
+                        <li><a href="#">Phú Quốc</a></li>
+                        <li><a href="#">Đà Lạt</a></li>
+                        <li><a href="#">Hội An</a></li>
+                        <li><a href="#">Sa Pa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Liên hệ</h3>
+                    <p><i class="fas fa-phone"></i> 1900 1234</p>
+                    <p><i class="fas fa-envelope"></i> info@dulichvn.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Huệ, Q.1, TP.HCM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Du Lịch Việt Nam. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Dữ liệu chi tiết cho từng địa điểm
+        const destinationData = {
+            halong: {
+                title: 'Vịnh Hạ Long',
+                location: 'Quảng Ninh',
+                rating: '4.8',
+                description: 'Kỳ quan thiên nhiên thế giới với hàng nghìn hòn đảo đá vôi hùng vĩ nhô lên từ mặt nước xanh ngọc bích. Vịnh Hạ Long là điểm đến không thể bỏ qua khi du lịch Việt Nam.',
+                duration: '3-5 ngày',
+                season: 'Tháng 4 - Tháng 10',
+                food: 'Hải sản tươi sống, chả mực, sá sùng',
+                price: '2-5 triệu/người',
+                image: 'img/download.jpg',
+                activities: [
+                    '<i class="fas fa-ship"></i> Tham quan vịnh bằng thuyền',
+                    '<i class="fas fa-mountain"></i> Khám phá hang Sửng Sốt, Đầu Gỗ',
+                    '<i class="fas fa-water"></i> Chèo kayak',
+                    '<i class="fas fa-camera"></i> Check-in đảo Titop',
+                    '<i class="fas fa-swimmer"></i> Bơi lội'
+                ],
+                places: ['Hang Sửng Sốt', 'Đảo Titop', 'Hang Đầu Gỗ', 'Hồ Ba Hầm', 'Đảo Ngọc Vừng']
+            },
+            phuquoc: {
+                title: 'Đảo Phú Quốc',
+                location: 'Kiên Giang',
+                rating: '4.9',
+                description: 'Hòn đảo ngọc của Việt Nam với những bãi biển đẹp nhất, resort sang trọng và hệ sinh thái biển đa dạng. Phú Quốc là thiên đường nghỉ dưỡng.',
+                duration: '4-6 ngày',
+                season: 'Tháng 11 - Tháng 4',
+                food: 'Hải sản, ngọc trai, nước mắm Phú Quốc',
+                price: '3-8 triệu/người',
+                image: 'img/phu quoc nam dao.jpg',
+                activities: [
+                    '<i class="fas fa-umbrella-beach"></i> Tắm biển Sao, biển Kem',
+                    '<i class="fas fa-ship"></i> Lặn ngắm san hô',
+                    '<i class="fas fa-fish"></i> Câu mực đêm',
+                    '<i class="fas fa-tree"></i> Tham quan vườn tiêu',
+                    '<i class="fas fa-ticket-alt"></i> VinWonders Phú Quốc'
+                ],
+                places: ['Bãi Sao', 'Bãi Kem', 'Nhà tù Phú Quốc', 'Dinh Cậu', 'Hòn Thơm']
+            },
+            dalat: {
+                title: 'Đà Lạt',
+                location: 'Lâm Đồng',
+                rating: '4.7',
+                description: 'Thành phố ngàn hoa với khí hậu mát mẻ quanh năm, những đồi thông bạt ngàn và kiến trúc lãng mạn. Đà Lạt là điểm đến lý tưởng cho các cặp đôi.',
+                duration: '2-4 ngày',
+                season: 'Tháng 11 - Tháng 3',
+                food: 'Bánh tráng nướng, kem bơ, lẩu gà lá é',
+                price: '2-4 triệu/người',
+                image: 'img/da lat hoa.jpg',
+                activities: [
+                    '<i class="fas fa-train"></i> Tham quan ga Đà Lạt',
+                    '<i class="fas fa-flower"></i> Thung lũng tình yêu',
+                    '<i class="fas fa-cloud"></i> Đồi chè Cầu Đất',
+                    '<i class="fas fa-church"></i> Nhà thờ Domaine',
+                    '<i class="fas fa-coffee"></i> Cà phê view đẹp'
+                ],
+                places: ['Hồ Xuân Hương', 'Thung lũng Tình Yêu', 'Đồi Mộng Mơ', 'Nhà thờ Con Gà', 'Vườn hoa Đà Lạt']
+            },
+            hoian: {
+                title: 'Phố cổ Hội An',
+                location: 'Quảng Nam',
+                rating: '4.8',
+                description: 'Di sản văn hóa thế giới với những ngôi nhà cổ kính, đèn lồng rực rỡ và ẩm thực đường phố phong phú. Hội An quyến rũ du khách bởi vẻ đẹp trầm mặc.',
+                duration: '2-3 ngày',
+                season: 'Tháng 2 - Tháng 8',
+                food: 'Cao lầu, bánh mì, hoành thánh, cơm gà',
+                price: '2-4 triệu/người',
+                image: 'img/hoi an.jpg',
+                activities: [
+                    '<i class="fas fa-lantern"></i> Thả đèn hoa đăng',
+                    '<i class="fas fa-bicycle"></i> Đạp xe tham quan',
+                    '<i class="fas fa-cut"></i> May đo quần áo',
+                    '<i class="fas fa-utensils"></i> Học nấu ăn',
+                    '<i class="fas fa-water"></i> Biển An Bàng'
+                ],
+                places: ['Chùa Cầu', 'Nhà cổ Phùng Hưng', 'Hội quán Phúc Kiến', 'Chợ Hội An', 'Làng gốm Thanh Hà']
+            },
+            sapa: {
+                title: 'Sa Pa',
+                location: 'Lào Cai',
+                rating: '4.8',
+                description: 'Thị trấn mờ sương với ruộng bậc thang tuyệt đẹp, văn hóa bản địa độc đáo và không khí trong lành. Sa Pa là điểm đến yêu thích của dân phượt.',
+                duration: '3-4 ngày',
+                season: 'Tháng 9 - Tháng 11',
+                food: 'Lẩu cá hồi, thắng cố, cơm lam, rượu táo mèo',
+                price: '3-5 triệu/người',
+                image: 'img/sapa.jpg',
+                activities: [
+                    '<i class="fas fa-mountain"></i> Chinh phục Fansipan',
+                    '<i class="fas fa-terrain"></i> Trekking bản Cát Cát',
+                    '<i class="fas fa-cloud-sun"></i> Ngắm ruộng bậc thang',
+                    '<i class="fas fa-shopping-bag"></i> Chợ phiên Sa Pa',
+                    '<i class="fas fa-hot-tub"></i> Tắm lá thuốc'
+                ],
+                places: ['Đỉnh Fansipan', 'Bản Cát Cát', 'Thác Bạc', 'Đèo Ô Quy Hồ', 'Nhà thờ đá Sa Pa']
+            },
+            hue: {
+                title: 'Cố đô Huế',
+                location: 'Thừa Thiên Huế',
+                rating: '4.7',
+                description: 'Kinh đô xưa với Đại Nội, lăng tẩm các vua Nguyễn và nền ẩm thực cung đình tinh tế. Huế mang vẻ đẹp trầm mặc, cổ kính bên dòng sông Hương.',
+                duration: '2-3 ngày',
+                season: 'Tháng 1 - Tháng 8',
+                food: 'Bún bò Huế, bánh bèo, cơm hến, chè Huế',
+                price: '2-4 triệu/người',
+                image: 'img/codohue.jpg',
+                activities: [
+                    '<i class="fas fa-archway"></i> Tham quan Đại Nội',
+                    '<i class="fas fa-tomb"></i> Viếng lăng vua Minh Mạng',
+                    '<i class="fas fa-river"></i> Thuyền trên sông Hương',
+                    '<i class="fas fa-pagoda"></i> Chùa Thiên Mụ',
+                    '<i class="fas fa-music"></i> Nghe nhã nhạc cung đình'
+                ],
+                places: ['Đại Nội', 'Lăng Khải Định', 'Lăng Minh Mạng', 'Chùa Thiên Mụ', 'Cầu Tràng Tiền']
+            }
+        };
+
+        // Hàm mở popup
+        function openPopup(id) {
+            const data = destinationData[id];
+            if (!data) return;
+
+            // Cập nhật nội dung popup
+            document.getElementById('popupTitle').textContent = data.title;
+            document.getElementById('popupLocation').textContent = data.location;
+            document.getElementById('popupRating').textContent = data.rating;
+            document.getElementById('popupDescription').textContent = data.description;
+            document.getElementById('popupDuration').textContent = data.duration;
+            document.getElementById('popupSeason').textContent = data.season;
+            document.getElementById('popupFood').textContent = data.food;
+            document.getElementById('popupPrice').textContent = data.price;
+            document.getElementById('popupMainImage').src = data.image;
+
+            // Cập nhật hoạt động
+            const activitiesList = document.getElementById('popupActivities');
+            activitiesList.innerHTML = '';
+            data.activities.forEach(activity => {
+                const li = document.createElement('li');
+                li.innerHTML = activity;
+                activitiesList.appendChild(li);
+            });
+
+            // Cập nhật địa điểm
+            const placesGrid = document.getElementById('popupPlaces');
+            placesGrid.innerHTML = '';
+            data.places.forEach(place => {
+                const span = document.createElement('span');
+                span.textContent = place;
+                placesGrid.appendChild(span);
+            });
+
+            // Hiển thị popup
+            document.getElementById('destinationPopup').style.display = 'block';
+            document.body.style.overflow = 'hidden'; // Ngăn scroll
+        }
+
+        // Hàm đóng popup
+        function closePopup() {
+            document.getElementById('destinationPopup').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Cho phép scroll lại
+        }
+
+        // Hàm chia sẻ
+        function shareDestination() {
+            alert('Tính năng chia sẻ đang được phát triển!');
+        }
+
+        // Đóng popup khi click ra ngoài
+        window.onclick = function(event) {
+            const popup = document.getElementById('destinationPopup');
+            if (event.target == popup) {
+                closePopup();
+            }
+        }
+
+        // Xử lý menu mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('nav-menu');
+
+            if (hamburger) {
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
+                    navMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

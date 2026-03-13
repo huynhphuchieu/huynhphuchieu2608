@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Địa điểm nổi bật - Du Lịch Việt Nam</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header giống index.html -->
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="index.html">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>DuLichVN</span>
+                    </a>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                    <li><a href="dia-diem.html" class="active">Địa điểm nổi bật</a></li>
+                    <li><a href="lien-he.html">Liên hệ</a></li>
+                    <li><a href="dang-ky.html" class="btn-register">Đăng ký</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Địa điểm nổi bật</h1>
+            <p>Trang chủ / Địa điểm nổi bật</p>
+        </div>
+    </section>
+
+    <!-- Filter Section -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tất cả</button>
+                <button class="filter-btn" data-filter="north">Miền Bắc</button>
+                <button class="filter-btn" data-filter="central">Miền Trung</button>
+                <button class="filter-btn" data-filter="south">Miền Nam</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Grid -->
+    <section class="destinations-page">
+        <div class="container">
+            <div class="destination-grid">
+                <!-- Miền Bắc -->
+                <div class="destination-card" data-category="north">
+                    <div class="destination-img">
+                        <img src="https://images.unsplash.com/photo-1528127269322-539801943592?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Hạ Long">
+                        <span class="region-badge north">Miền Bắc</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Vịnh Hạ Long</h3>
+                        <p>Di sản thiên nhiên thế giới với hàng ngàn hòn đảo đá vôi</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-pin"></i> Quảng Ninh</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="north">
+                    <div class="destination-img">
+                        <img src="img/sapa.jpg" alt="Sapa">
+                        <span class="region-badge north">Miền Bắc</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Sa Pa</h3>
+                        <p>Thị trấn mờ sương với ruộng bậc thang tuyệt đẹp</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-pin"></i> Lào Cai</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="north">
+                    <div class="destination-img">
+                        <img src="img/hà giang.jpg" alt="Hà Giang">
+                        <span class="region-badge north">Miền Bắc</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Hà Giang</h3>
+                        <p>Cao nguyên đá với những cung đường đèo ngoạn mục</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-pin"></i> Hà Giang</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="north">
+                    <div class="destination-img">
+                        <img src="img/ninh bình.jpg" alt="Ninh Bình">
+                        <span class="region-badge north">Miền Bắc</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Ninh Bình</h3>
+                        <p>Vịnh Hạ Long trên cạn với quần thể danh thắng Tràng An</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-pin"></i> Ninh Bình</span>
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miền Trung -->
+                <div class="destination-card" data-category="central">
+                    <div class="destination-img">
+                        <img src="img/hoi an.jpg" alt="Hội An">
+                        <span class="region-badge central">Miền Trung</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Phố cổ Hội An</h3>
+                        <p>Đô thị cổ với những ngôi nhà rêu phong, đèn lồng lung linh</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-pin"></i> Quảng Nam</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="central">
+                    <div class="destination-img">
+                        <img src="img/hue 2.jpg" alt="Huế">
+                        <span class="region-badge central">Miền Trung</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Cố đô Huế</h3>
+                        <p>Kinh thành xưa với Đại Nội, lăng tẩm và ẩm thực cung đình</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-pin"></i> Thừa Thiên Huế</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="central">
+                    <div class="destination-img">
+                        <img src="img/na dang.jpg" alt="Đà Nẵng">
+                        <span class="region-badge central">Miền Trung</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Đà Nẵng</h3>
+                        <p>Thành phố đáng sống với cầu Rồng và bãi biển Mỹ Khê</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-pin"></i> Đà Nẵng</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="central">
+                    <div class="destination-img">
+                        <img src="img/nha trang.jpg " alt="Nha Trang">
+                        <span class="region-badge central">Miền Trung</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Nha Trang</h3>
+                        <p>Thành phố biển với vịnh Nha Trang và Vinpearl Land</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-pin"></i> Khánh Hòa</span>
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Miền Nam -->
+                <div class="destination-card" data-category="south">
+                    <div class="destination-img">
+                        <img src="img/phu quoc nam dao.jpg" alt="Phú Quốc">
+                        <span class="region-badge south">Miền Nam</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Đảo Phú Quốc</h3>
+                        <p>Đảo ngọc với những bãi biển hoang sơ và resort cao cấp</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-pin"></i> Kiên Giang</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="south">
+                    <div class="destination-img">
+                        <img src="img/dalat.jpg" alt="Đà Lạt">
+                        <span class="region-badge south">Miền Nam</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Đà Lạt</h3>
+                        <p>Thành phố ngàn hoa với khí hậu mát mẻ quanh năm</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-pin"></i> Lâm Đồng</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="south">
+                    <div class="destination-img">
+                        <img src="img/tp hcm.jpg" alt="TP HCM">
+                        <span class="region-badge south">Miền Nam</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>TP. Hồ Chí Minh</h3>
+                        <p>Thành phố năng động với nhà thờ Đức Bà, chợ Bến Thành</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-pin"></i> TP. Hồ Chí Minh</span>
+                            <span><i class="fas fa-star"></i> 4.5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="south">
+                    <div class="destination-img">
+                        <img src="img/cantho.jpg" alt="Cần Thơ">
+                        <span class="region-badge south">Miền Nam</span>
+                    </div>
+                    <div class="destination-info">
+                        <h3>Cần Thơ</h3>
+                        <p>Thủ phủ miền Tây với chợ nổi Cái Răng và vườn trái cây</p>
+                        <div class="destination-meta">
+                            <span><i class="fas fa-map-pin"></i> Cần Thơ</span>
+                            <span><i class="fas fa-star"></i> 4.4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer giống index.html -->
+    <footer>
+        <!-- Copy phần footer từ index.html vào đây -->
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span>DuLichVN</span>
+                    </div>
+                    <p>Khám phá vẻ đẹp Việt Nam cùng chúng tôi. Hành trình của bạn bắt đầu từ đây.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>Liên kết nhanh</h3>
+                    <ul>
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+                        <li><a href="dia-diem.html">Địa điểm</a></li>
+                        <li><a href="lien-he.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Địa điểm nổi bật</h3>
+                    <ul>
+                        <li><a href="#">Vịnh Hạ Long</a></li>
+                        <li><a href="#">Phú Quốc</a></li>
+                        <li><a href="#">Đà Lạt</a></li>
+                        <li><a href="#">Hội An</a></li>
+                        <li><a href="#">Sa Pa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>Liên hệ</h3>
+                    <p><i class="fas fa-phone"></i> 1900 1234</p>
+                    <p><i class="fas fa-envelope"></i> info@dulichvn.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Nguyễn Huệ, Q.1, TP.HCM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Du Lịch Việt Nam. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
